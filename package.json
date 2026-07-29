@@ -1,0 +1,15 @@
+{
+  "name": "collabsync",
+  "version": "1.0.0",
+  "description": "a project management application for beginners",
+  "license": "ISC",
+  "author": "Pankaj",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "pro": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}
