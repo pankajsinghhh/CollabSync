@@ -1,2 +1,4 @@
 $kind: collection
 name: collabsynco
+variables:
+  mine: ""
