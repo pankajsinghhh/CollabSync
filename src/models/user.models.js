@@ -34,7 +34,7 @@ const userSchema = new Schema({
     },
     password: {
         type: String,
-        required: [true, "password is required"]
+        required: [true, "password is required"] //this array's second part works as error
     },
     isemailverified: {
         type: Boolean,

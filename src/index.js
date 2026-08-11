@@ -13,5 +13,6 @@ connectdb().then(() => {
   })
 })
   .catch((err) => {
-    console.error("mongdb connection error", error)
+    console.error("mongdb connection error", err);
+    process.exit(1);
   })
