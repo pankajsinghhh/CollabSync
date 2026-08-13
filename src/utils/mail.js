@@ -29,8 +29,8 @@ const sendemail = async (options) => {
   try {
     await transporter.sendMail(mail)
   } catch (error) {
-    console.error("email service failed silently, this might have happened because of the credentials, make sure that you have provided mailtrap credientials in .env file")
-    console.error(error);
+    console.error("email service failed silently, this might have happened because of the     credentials, make sure that you have provided mailtrap credientials in .env file")
+    console.error("Error:",error);
   }
 }
 const emailverificationmailgencontent = (username, verificationurl) => {
@@ -46,7 +46,7 @@ const emailverificationmailgencontent = (username, verificationurl) => {
           link: verificationurl,
         },
       },
-      outro: "need help of have questions?, we would help",
+      outro: "need help or have questions?, we would help",
     },
   };
 };

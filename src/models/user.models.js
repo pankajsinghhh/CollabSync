@@ -83,9 +83,7 @@ userSchema.methods.generateaccesstoken = function () {
 
 userSchema.methods.generaterefreshtoken = function () {
     return jwt.sign({
-        _id: this._id,
-        email: this.email,
-        username: this.username,
+        _id: this._id
     },
         process.env.REFRESH_TOKEN_SECRET,
         { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
@@ -99,4 +97,4 @@ userSchema.methods.generatetemporarytoken = function () {
     return { unhashedtoken, hashedtoken, tokenexpiry }
 };
 
-export const User = mongoose.model("User",userSchema)
+export const User = mongoose.model("User", userSchema);
